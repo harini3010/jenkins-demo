@@ -25,6 +25,13 @@ public class TeacherController {
 	}
 	return list.toString();
 	}
+	
+	@GetMapping(path="/teachers/{id}")
+	public String getTeacherById(@PathVariable("id") int id) {
+	List<String> list = Arrays.asList("amar","swetha","sumi");
+
+	return "Best Teachers";
+	}
 
 
 }
